@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Case Studies • Local Gov Evaluation Hub</title>
+  <meta name="description" content="Example evaluation write-ups and patterns from local government and the wider public sector." />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-badge" aria-hidden="true"></div>
+        <div>Local Gov Evaluation Hub<small>Methods • case studies • papers • networks</small></div>
+      </div>
+      <div class="top-actions">
+        <div class="search" role="search" aria-label="Search resources on this page">
+          <span aria-hidden="true">⌕</span>
+          <input id="siteSearch" type="search" placeholder="Search this page…" />
+        </div>
+        <button id="openMenu" class="menu-btn" aria-haspopup="dialog" aria-controls="navDrawer">
+          <span class="menu-icon" aria-hidden="true"><span></span></span> Menu
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div id="navDrawer" class="nav-drawer" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Site navigation">
+    <div class="drawer-panel">
+      <div class="drawer-top">
+        <strong>Navigate</strong>
+        <button id="closeMenu" class="close-btn" aria-label="Close menu">Close</button>
+      </div>
+      <nav class="nav-links" data-nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="methods.html">Methods</a>
+        <a href="case-studies.html">Case studies</a>
+        <a href="research-papers.html">Research papers</a>
+        <a href="networks.html">Networks</a>
+      </nav>
+      <div class="drawer-footer">Case studies are patterns you can adapt, not blueprints to copy blindly.</div>
+    </div>
+  </div>
+
+  <main id="main" class="container">
+    <section class="hero">
+      <h1>Case studies</h1>
+      <p>
+        Use these as “shapes” for your own write-ups: what was tried, what changed, what evidence supports the claim,
+        and what you’d do differently next time.
+      </p>
+      <div class="pills">
+        <div class="pill">Programme improvement</div>
+        <div class="pill">Place-based</div>
+        <div class="pill">Prevention</div>
+        <div class="pill">Procurement/commissioning</div>
+        <div class="pill">Service redesign</div>
+      </div>
+    </section>
+
+    <section class="main">
+      <h2 class="section-title">Reusable case-study patterns</h2>
+      <p class="section-lede">These are intentionally generic, so you can tailor them to your local programmes and data.</p>
+
+      <div class="grid">
+        <article class="card" data-card>
+          <h3>Pattern: Pilot → iterate → scale</h3>
+          <p>Small pilot with tight process evaluation, then scale with stronger outcome tracking.</p>
+          <ul>
+            <li>Clear eligibility + referral pathways</li>
+            <li>Implementation learning in weeks, not months</li>
+            <li>Decision gate: scale / adapt / stop</li>
+          </ul>
+          <div class="meta"><span class="tag">Agile</span><span class="tag">Learning loop</span></div>
+        </article>
+
+        <article class="card" data-card>
+          <h3>Pattern: Targeted support for a high-need group</h3>
+          <p>Combine admin data with lived experience to test whether support reduces avoidable demand.</p>
+          <ul>
+            <li>Define “need” consistently</li>
+            <li>Track pathways (what services used, when)</li>
+            <li>Look for displacement and unintended effects</li>
+          </ul>
+          <div class="meta"><span class="tag">Equity</span><span class="tag">Demand management</span></div>
+        </article>
+
+        <article class="card" data-card>
+          <h3>Pattern: Service redesign</h3>
+          <p>Measure whether the new model improves timeliness, quality, and outcomes—without worsening access.</p>
+          <ul>
+            <li>Use run charts / time series</li>
+            <li>Triangulate staff + user feedback</li>
+            <li>Document implementation variance</li>
+          </ul>
+          <div class="meta"><span class="tag">Operations</span><span class="tag">Quality</span></div>
+        </article>
+
+        <article class="card" data-card>
+          <h3>Pattern: Place-based partnership programme</h3>
+          <p>Multiple actors, shared outcomes. Use contribution-based approaches and joint measurement plans.</p>
+          <ul>
+            <li>Shared theory of change</li>
+            <li>Contribution story + evidence map</li>
+            <li>Governance for data sharing</li>
+          </ul>
+          <div class="meta"><span class="tag">Systems</span><span class="tag">Partnership</span></div>
+        </article>
+
+        <article class="card" data-card>
+          <h3>Pattern: Commissioned provider outcomes</h3>
+          <p>Specify outcomes well, then monitor quality and gaming risk.</p>
+          <ul>
+            <li>Define outcomes and verification</li>
+            <li>Audit samples, not everything</li>
+            <li>Include qualitative checks for experience</li>
+          </ul>
+          <div class="meta"><span class="tag">Commissioning</span><span class="tag">Assurance</span></div>
+        </article>
+
+        <article class="card" data-card>
+          <h3>Pattern: Prevention / early help</h3>
+          <p>Benefits appear later. Use intermediate outcomes and long-term modelling carefully.</p>
+          <ul>
+            <li>Agree proxy outcomes (short-term signals)</li>
+            <li>Track retention and reach</li>
+            <li>Be cautious with monetisation claims</li>
+          </ul>
+          <div class="meta"><span class="tag">Prevention</span><span class="tag">Long-term</span></div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      Next: browse foundations on <a href="research-papers.html">research papers</a> and communities on <a href="networks.html">networks</a>.
+    </footer>
+  </main>
+</body>
+</html>
