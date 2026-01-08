@@ -1,0 +1,54 @@
+(function () {
+  const drawer = document.getElementById("navDrawer");
+  const openBtn = document.getElementById("openMenu");
+  const closeBtn = document.getElementById("closeMenu");
+
+  function openDrawer() {
+    if (!drawer) return;
+    drawer.classList.add("open");
+    drawer.setAttribute("aria-hidden", "false");
+    closeBtn?.focus();
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeDrawer() {
+    if (!drawer) return;
+    drawer.classList.remove("open");
+    drawer.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+    openBtn?.focus();
+  }
+
+  openBtn?.addEventListener("click", openDrawer);
+  closeBtn?.addEventListener("click", closeDrawer);
+
+  // Close when clicking the dark backdrop (but not the panel)
+  drawer?.addEventListener("click", (e) => {
+    if (e.target === drawer) closeDrawer();
+  });
+
+  // Close on Escape
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && drawer?.classList.contains("open")) closeDrawer();
+  });
+
+  // Highlight active link
+  const path = (location.pathname.split("/").pop() || "index.html").toLowerCase();
+  document.querySelectorAll("[data-nav] a").forEach((a) => {
+    const href = (a.getAttribute("href") || "").toLowerCase();
+    if (href === path) a.classList.add("active");
+  });
+
+  // Simple client-side search (matches text inside cards)
+  const searchInput = document.getElementById("siteSearch");
+  if (searchInput) {
+    searchInput.addEventListener("input", () => {
+      const q = searchInput.value.trim().toLowerCase();
+      const cards = document.querySelectorAll("[data-card]");
+      cards.forEach((card) => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(q) ? "" : "none";
+      });
+    });
+  }
+})();
